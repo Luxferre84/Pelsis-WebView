@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #b54078;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 8px 8px;
+    padding: 0 20px;
+}
+
+.navbar-sejarah {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    font-weight: 600;
+    background-color: #b54078;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.icon-link svg {
+    margin-left: 9%;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    flex: 1;
+    margin-right: 55px;
+}
+ 
+.sorotan-box {
+    border-radius: 8px 8px 8px 8px;
+}
+
+.boxdiklat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px; /* Add this line to create a gap between the event boxes */
+    margin-top: 20%; /* Menambahkan margin untuk menghindari navbar di atas */
+    margin-bottom: 30%; /* Menambahkan margin untuk menghindari navbar di bawah */
+}
+
+.events {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; /* Adjust this value to increase or decrease spacing between boxes */
+    width: 90%; /* Ensure full width */
+}
+
+.event-box {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 6%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    gap: 10px; /* Space between image and text */
+    width: 100%; /* Make the box full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.event-photo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-tabler-chevron-right {
+    margin-left: auto; /* Pushes the icon to the right */
+}
+
+
+.title {
+    font-weight: 650; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 0.8em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+}
+
+.title2 {
+    font-weight: 600; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 1em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title3 {
+    font-weight: 600; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 1em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 100px;
+}
+
+.title4 {
+    font-weight: 600; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 1.8em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.title5 {
+    font-weight: 600; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 1em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 50px;
+}
+
+
+.subtitle {
+    font-weight: 300; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 0.7em;  /* Optional: Adjust the size if needed */
+    color: #000000;    /* Optional: Adjust color if needed */
+}
+
+.mengenal-pelsis {
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Optional: Add some padding */
+    padding-top: 40px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.mengenal-pelsis2 {
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Optional: Add some padding */
+    padding-top: 1px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.mengenal-pelsis2 img {
+    width: 70px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t overflow its container */
+}
+
+
+.mengenal-pelsis img {
+    width: 50px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn’t overflow its container */
+}
+
+.sorotan-box {
+    align-items: center;
+}
+
+.sorotan-all {
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+h2 {
+    color: #000000;
+    font-size: small;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.psection {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.psection3 {
+    margin-top: 7px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-size: 0.7em;
+}
+
+.psection1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.psection1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.8em;
+    font-size: 0.7em;
+    text-align: justify;
+}
+
+.psection2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.7em;
+    margin-top: 1px; /* Add space to prevent overlap with navbar and title */
+}
+
+.psection2 h2 {
+    text-align: center;
+}
+
+.psection2 p {
+    text-align: justify;
+    max-width: 800px;
+}
+.psection-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 375px) {
+    .boxdiklat {
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+}
+
+@media (min-width: 645px) {
+    .boxdiklat {
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .events {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .event-box {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .navbar {
+        height: 8%;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .event-box {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+
+    .boxdiklat {
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+
+
+}
+
+
+

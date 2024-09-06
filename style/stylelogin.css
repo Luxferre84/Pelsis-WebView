@@ -1,0 +1,187 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    background-color: #f7f7f7;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textsmol {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-bottom: 100px;
+}
+
+
+.login-header .header-text {
+    text-align: left;
+}
+
+.login-header .header-text h1 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.login-header .header-text p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+.login-header img.logo {
+    width: 80px;
+    margin-left: 10px;
+}
+
+----------------------
+
+.login-header-2 {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-bottom: 100px !important;
+}
+
+.login-header-2 .header-text {
+    text-align: left; /* Teks di sebelah kiri */
+}
+
+.login-header-2 .header-text h1 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.login-header-2 .header-text p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+.login-header-2 img.logo {
+    width: 80px;
+    margin-left: 10px;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #e8f0fe;
+}
+
+
+.input-group .toggle-password {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
+.forgot-password {
+    float: right;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    letter-spacing: 2.3px;
+    font-weight: bold;
+    background-color: #c97c9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #b16b84;
+}
+
+
+
+.register-link {
+    margin-top: 60px;
+    font-size: 15px;
+}
+
+.register-link a {
+    color: #c97c9a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-header {
+        flex-direction: column;
+    }
+
+    .login-header .header-text {
+        text-align: center;
+    }
+
+    .login-header img.logo {
+        margin: 10px 0;
+    }
+
+    .input-group input {
+        padding: 8px;
+    }
+
+    .login-button {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .register-link {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+
+.upper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    font-weight: 600;
+    background-color: #b54078;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.icon-link svg {
+    margin-left: 9%;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    flex: 1;
+    margin-right: 55px;
+}
+
+
+
+
+
+
+.events {
+    display: flex;
+    flex-direction: column; 
+    width: 90%; /* Ensure full width */
+    margin-top: 30px;
+}
+
+.event-box {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 6%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    gap: 10px; /* Space between image and text */
+    width: 100%; /* Make the box full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.event-photo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+.eventwrap {
+    margin-top: 10%;
+}
+
+.title {
+    font-weight: 650; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 0.8em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+}
+
+.title2 {
+    font-weight: 650; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 1.3em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.table-container {
+    width: 60%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+table th, table td {
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+}
+
+table thead th {
+    background-color: #d74894;
+    color: white;
+    text-align: center;
+}
+
+table tbody tr {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #d74894;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+.profile-info {
+    margin-top: 100px;
+}
+
+.profile-item {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.profile-item label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile-item input {
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.update-profile-btn {
+    background-color: #d74894;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.update-profile-btn:hover {
+    background-color: #b54078;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}

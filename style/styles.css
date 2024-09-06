@@ -1,0 +1,227 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 80px; 
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.segment {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+
+.boxsatuan {
+    font-size: 15px;
+}
+
+.t {
+    font-size: 50;
+}
+
+.segment-box {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segment-box .icon {
+    color: #b54078; /* Set SVG icon color */
+}
+
+.segment-box svg {
+    margin-bottom: 5px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Adjust this value to increase or decrease spacing between boxes */
+}
+
+.event-box {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px; /* Space between image and text */
+}
+
+.event-photo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1.8);
+    border-radius: 20px;
+    padding: 0 20px; /* Optional: add padding for spacing */
+}
+
+.navbar-sejarah .icon {
+    margin-top: 5px;
+    margin-left: 20px; /* Pushes the SVG to the right */
+}
+
+.navbar-sejarah {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    font-weight: 600;
+    background-color: #b54078;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.nav-item {
+    color: #AEB2B7;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.title {
+    font-weight: 600; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 0.8em;  /* Optional: Adjust the size if needed */
+    color: #000000;
+}
+
+.subtitle {
+    font-weight: 300; /* Adjust to 200 or 100 for even thinner text, if available */
+    font-size: 0.7em;  /* Optional: Adjust the size if needed */
+    color: #000000;    /* Optional: Adjust color if needed */
+}
+
+.pagewrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.boxdiklat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add this line to create a gap between the event boxes */
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .segment {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .segment-box {
+        flex: 1 1 calc(33.333% - 20px);
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .events {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .event-box {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .navbar {
+        height: 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
+
+    .segment-box {
+        flex: 1 1 calc(25% - 20px);
+    }
+
+    .event-box {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+
+    .navbar {
+        height: 10%;
+    }
+}
+
+
